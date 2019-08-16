@@ -43,12 +43,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="13175" />
+          <entry key="py" value="13176" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="10130" />
+          <entry key="Python" value="10131" />
           <entry key="Scratch" value="3045" />
         </counts>
       </usages-collector>
@@ -105,7 +105,7 @@
         <entry file="file://$PROJECT_DIR$/sw_4579.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="266">
-              <caret line="14" column="33" selection-end-line="14" selection-end-column="50" />
+              <caret line="14" column="50" lean-forward="true" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -356,7 +356,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="953" y="0" width="974" height="1047" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21794872" />
@@ -558,7 +558,7 @@
     <entry file="file://$PROJECT_DIR$/sw_4579.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
-          <caret line="14" column="33" selection-end-line="14" selection-end-column="50" />
+          <caret line="14" column="50" lean-forward="true" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
         </state>
       </provider>
     </entry>
