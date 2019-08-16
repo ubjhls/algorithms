@@ -1,2 +1,3 @@
-test_input = list(map(str, input().split()))
-print(test_input)
+a = [1,2]
+for i in a:
+    print(i)
