@@ -1,5 +1,5 @@
 def DFS(v):
-    # 시작점을 방문하고, 스택에 push
+                # 시작점을 방문하고, 스택에 push
     S =[]
     visit[v] = True; print(v, end=' ')
     S.append(v)
@@ -10,12 +10,13 @@ def DFS(v):
                 S.append(v)     # v를 w로 설정
                 v = w
                 break
+
             else:       # 인접정점이 없다면, 스택에서 pop()해서
                 v = S.pop()
         # v로 설정
 
 V, E = map(int, input().split())
-G = [[] for _ in range(V + 1)]
+G = [[False]*(V+1) for _ in range(V + 1)]
 visit = [False] * (V + 1)
 
 for _ in range(E):
