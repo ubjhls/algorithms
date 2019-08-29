@@ -1,2 +1,2 @@
-a=[1,2,2,2,2,3]
-print(a.index(2,2,3))
+for i in range(0,4,2):
+    print(i)
