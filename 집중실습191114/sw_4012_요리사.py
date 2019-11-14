@@ -1,23 +1,31 @@
 from itertools import combinations
+def cal(A, B):
+    tmp_1 = 0
+    tmp_2 = 0
+    for i in combinations(A, 2):
+        tmp_1 += cook[i[0]][i[1]] + cook[i[1]][i[0]]
+    for i in combinations(B, 2):
+        tmp_2 += cook[i[0]][i[1]] + cook[i[1]][i[0]]
+    ans = abs(tmp_1 - tmp_2)
+    return ans
+
 T = int(input())
 for t in range(1, T + 1):
     N = int(input())
-    arr = [list(map(int, input().split())) for _ in range(N)]
-    num = []
+    cook = [list(map(int, input().split())) for _ in range(N)]
+    tmp = []
+    taste = []
     result = 0xffffff
     for i in range(N):
-        num.append(i)
-    for i in range(len(num)):
-        for j in range(len(num)):
-            if i == j:
-                continue
-            for k in range(len(num)):
-                if i == k or j == k:
-                    continue
-                for m in range(len(num)):
-                    if i == m or j == m or k == m:
-                        continue
-                    a = abs((arr[i][j] + arr[j][i]) - (arr[k][m] + arr[m][k]))
-                    if result > a:
-                        result = a
+        tmp.append(i)
+
+    for element in combinations(tmp, N // 2):
+        taste.append(element)
+
+    for j in range(len(taste) // 2 + 1):
+        A = taste[j]
+        B = taste[-1 - j]
+        answer = cal(A, B)
+        if result > answer:
+            result = answer
     print('#{} {}'.format(t, result))
