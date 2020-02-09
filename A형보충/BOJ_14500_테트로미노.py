@@ -1,8 +1,11 @@
+import sys
+
 def dfs(x, y, count, value):
     global ans
     for k in range(4):
-        nx, ny = x + dx[k], y + dy[k]
-        if nx < 0 or ny < 0 or nx >= n or ny >= m:
+        try:
+            nx, ny = x + dx[k], y + dy[k]
+        except IndexError:
             continue
         if not visit[nx][ny]:
             visit[nx][ny] = True
@@ -38,7 +41,7 @@ def mid(x, y):
 
 n, m = map(int, input().split())
 dx, dy = (0, 0, 1, -1), (1, -1, 0, 0)
-arr = [list(map(int, input().split())) for _ in range(n)]
+arr = [list(map(int, sys.stdin.readline().split())) for _ in range(n)]
 ans = 0
 
 for i in range(n):
