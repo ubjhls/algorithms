@@ -1,6 +1,6 @@
 import heapq
 
-def bfs():
+def dijkstra():
     while q:
         val, x, y = heapq.heappop(q)
         for i in range(4):
@@ -25,5 +25,5 @@ while True:
     dp = [[0xfffff] * n for _ in range(n)]
     dp[0][0] = arr[0][0]
     heapq.heappush(q, [arr[0][0], 0, 0])
-    bfs()
+    dijkstra()
     print('{} {}: {}'.format('Problem', count, dp[n-1][n-1]))
