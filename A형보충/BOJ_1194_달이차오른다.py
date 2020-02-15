@@ -1,62 +1,38 @@
+import sys
 from collections import deque
+input = sys.stdin.readline
+
+n, m = map(int, input().split())
+a = [list(input().strip()) for _ in range(n)]
+dist = [[[0]*64 for _ in range(m)] for _ in range(n)]
+q = deque()
+
+def init():
+    for i in range(n):
+        for j in range(m):
+            if a[i][j] == '0':
+                q.append((i, j, 0))
+                return
 
 def bfs():
-    global answer, count, q
-    visit = [[False] * M for _ in range(N)]
     while q:
-        for w in range(len(q)):
-            x, y = q.popleft()
-            for i in range(4):
-                nx, ny = x + dx[i], y + dy[i]
-                if nx < 0 or ny < 0 or nx >= N or ny >= M:
-                    continue
-                if not visit[nx][ny] and arr[nx][ny] !='#':
-                    if arr[nx][ny] == '1':
-                        answer = 1
-                        count += 1
-                        return
-                    if arr[nx][ny] != '.':
-                        if 97 <= ord(arr[nx][ny]) < 123:
-                            key.append(chr(ord(arr[nx][ny]) - 32))
-                            arr[nx][ny] = '.'
-                            q = deque()
-                            q.append((nx, ny))
-                            count += 1
-                            return
-                        else:
-                            if arr[nx][ny] in key:
-                                arr[nx][ny] = '.'
-                                q.append((nx, ny))
-                                visit[nx][ny] = True
-                                continue
-                            else:
-                                continue
-                    visit[nx][ny] = True
-                    q.append((nx, ny))
-        count += 1
-    answer = -1
-def init():
-    global answer, count
-    for i in range(N):
-        for j in range(M):
-            if arr[i][j] == '0':
-                arr[i][j] = '.'
-                q.append((i, j))
-                while True:
-                    bfs()
-                    if answer == 1:
-                        return
-                    elif answer == -1:
-                        count = -1
-                        return
+        x, y, k = q.popleft()
+        if a[x][y] == '1':
+            print(dist[x][y][k])
+            return
+        for dx, dy in (-1, 0), (1, 0), (0, -1), (0, 1):
+            nx, ny, nk = x+dx, y+dy, k
+            if nx < 0 or nx >= n or ny < 0 or ny >= m:
+                continue
+            c = a[nx][ny]
+            if c.islower():
+                nk |= (1<<(ord(c)-ord('a')))
+            elif c.isupper() and not nk & (1<<(ord(c)-ord('A'))):
+                continue
+            if not dist[nx][ny][nk] and c != '#':
+                q.append((nx, ny, nk))
+                dist[nx][ny][nk] = dist[x][y][k] + 1
+    print(-1)
 
-N, M = map(int, input().split())
-arr = [list(input()) for _ in range(N)]
-dx = [0, 0, 1, -1]
-dy = [1, -1, 0, 0]
-q = deque()
-key = []
-count = 0
-answer = 0
 init()
-print(count)
+bfs()
