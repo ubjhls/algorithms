@@ -1,6 +1,5 @@
 from copy import deepcopy
 
-
 def move(n, A, flag):
     a = deepcopy(A)
     if flag == 0:  # UP
@@ -84,7 +83,6 @@ def recur(depth, a):
         return
     for i in range(4):
         recur(depth + 1, move(n, a, i))
-
 
 n = int(input())
 a = [list(map(int, input().split())) for _ in range(n)]
