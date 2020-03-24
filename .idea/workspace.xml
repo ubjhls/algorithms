@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60bb1975-b466-43d3-9252-f6a618c0b521" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/A형보충/BOJ_17140_이차원배열과 연산.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A형보충/BOJ_10815_숫자카드.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,11 +34,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="952" />
-    <option name="width" value="977" />
-    <option name="height" value="1038" />
   </component>
   <component name="ProjectId" id="1ZODz69CT8H1l4ZquXMABZSvRVV" />
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -79,7 +74,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.BOJ_17140_이차원배열과 연산">
+  <component name="RunManager" selected="Python.BOJ_10815_숫자카드">
+    <configuration name="BOJ_10815_숫자카드" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="algorithms" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\owner\AppData\Local\Programs\Python\Python37\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/A형보충" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/A형보충/BOJ_10815_숫자카드.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="BOJ_1194_달이차오른다" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="algorithms" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -143,27 +159,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="BOJ_17471_게리맨더링" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="algorithms" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/계절학기" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/계절학기/BOJ_17471_게리맨더링.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="BOJ_18405_경쟁적 전염" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="algorithms" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -186,19 +181,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.BOJ_17471_게리맨더링" />
       <item itemvalue="Python.BOJ_14503_로봇청소기" />
       <item itemvalue="Python.BOJ_1194_달이차오른다" />
       <item itemvalue="Python.BOJ_18405_경쟁적 전염" />
       <item itemvalue="Python.BOJ_17140_이차원배열과 연산" />
+      <item itemvalue="Python.BOJ_10815_숫자카드" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.BOJ_10815_숫자카드" />
         <item itemvalue="Python.BOJ_17140_이차원배열과 연산" />
         <item itemvalue="Python.BOJ_18405_경쟁적 전염" />
         <item itemvalue="Python.BOJ_1194_달이차오른다" />
         <item itemvalue="Python.BOJ_14503_로봇청소기" />
-        <item itemvalue="Python.BOJ_17471_게리맨더링" />
       </list>
     </recent_temporary>
   </component>
